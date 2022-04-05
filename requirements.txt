@@ -2,7 +2,7 @@ motor
 asyncurban
 aiohttp
 aiofiles
-a-pytube-fork-for-spotdl-users
+pytube
 antispaminc
 apiclient
 apscheduler
