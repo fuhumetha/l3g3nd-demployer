@@ -1,10 +1,7 @@
-#Repo Clonning ⚡♥️
-FROM kalilinux/kali-rolling
-ARG DEBIAN_FRONTEND=noninteractive
-ENV TERM xterm-256color
-RUN apt-get update && apt upgrade -y && apt-get install sudo -y
+FROM ubuntu:20.04
 
-RUN git clone https://github.com/fuhumetha/L3G3NDUS3RBOT.git /root/usrerbot
+#Repo Clonning ⚡♥️
+RUN git clone https://github.com/The-LegendBot/LEGENDUSERBOT.git /root/userbot
 
 #working directory 
 WORKDIR /root/userbot
@@ -12,6 +9,6 @@ WORKDIR /root/userbot
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/usrbot/bin:$PATH"
+ENV PATH="/home/userbot/bin:$PATH"
 
 CMD ["python3","-m","userbot"]
