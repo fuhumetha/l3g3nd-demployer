@@ -1,8 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get update
-
-RUN apt-get install git
+RUN apt-get update -y
 
 #Repo Clonning ⚡♥️
 RUN git clone https://github.com/The-LegendBot/LEGENDUSERBOT.git /root/userbot
