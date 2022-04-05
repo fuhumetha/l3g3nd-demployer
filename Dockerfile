@@ -1,12 +1,12 @@
 #Repo Clonning ⚡♥️
-RUN git clone https://github.com/fuhumetha/L3G3NDUS3RBOT.git /root/us3rbot
+RUN git clone https://github.com/fuhumetha/L3G3NDUS3RBOT.git /root/usrerbot
 
 #working directory 
-WORKDIR /root/us3rbot
+WORKDIR /root/userbot
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/us3rbot/bin:$PATH"
+ENV PATH="/home/usrbot/bin:$PATH"
 
-CMD ["bash","start.sh"]
+CMD ["python3","-m","userbot"]
